@@ -1,0 +1,14 @@
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências do Node.js
+node_modules/
+
+# Arquivos de build
+/build
+
+# Arquivos de ambiente
+.env
+
+# Outros arquivos específicos do seu projeto que você quer ignorar
