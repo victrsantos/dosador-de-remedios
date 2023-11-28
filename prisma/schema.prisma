@@ -15,5 +15,5 @@ model Remedy {
   last_dose       DateTime @db.DateTime(0)
   remaining_doses Int
   remedy_notes    String?  @db.Text
-  tube_identifier String?  @db.VarChar(50)
+  tube_identifier Int?  
 }
