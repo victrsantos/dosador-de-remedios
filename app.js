@@ -1,6 +1,6 @@
 const express = require('express');
 const remedyRoutes = require('./controllers/remedyController');
-
+const dispenserRoutes = require('./controllers/dispenserController');
 const app = express();
 
 app.use(express.json());
@@ -9,7 +9,7 @@ app.use(express.json());
 app.use('/remedies', remedyRoutes);
 
 // Rotas para o gerenciamento do dispenser dos medicamentos
-
+app.use('/dispenser', dispenserRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
